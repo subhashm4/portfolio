@@ -1,57 +1,146 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+body{
+background:#0f172a;
+color:white;
 }
 
-
-.profile{
-  height: 100vh;
-  background: url("bg.jpg") center / cover no-repeat;
-  position: relative;
-  color: white;
+/* NAVBAR */
+header{
+position:fixed;
+width:100%;
+top:0;
+background:#020617;
+padding:15px 40px;
+z-index:1000;
 }
 
-nav {
-  position: absolute;
-  top: 320px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  z-index: 2;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
+.logo{
+color:#38bdf8;
 }
 
-.content{
- position: absolute;
- top: 50%;
- left: 42.5%;
- text-align: center;
- z-index: 3;
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
 }
 
-.links{
- position: absolute;
- top: 60%;
- left: 43.5%;
- display: flex;
- gap: 40px;
- color: white;
- 
+nav a{
+color:white;
+text-decoration:none;
+font-size:15px;
 }
 
-.links a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
+nav a:hover
+
+/* HERO */
+.hero{
+height:100vh;
+background:url("bg.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:48px;
+}
+
+.hero-text h3{
+margin:10px 0;
+color:#38bdf8;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* SECTIONS */
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.section h2{
+font-size:32px;
+margin-bottom:20px;
+color:#38bdf8;
+}
+
+/* SKILLS */
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+}
+
+.skills span{
+background:#1e293b;
+padding:10px 18px;
+border-radius:20px;
+}
+
+/* PROJECTS */
+.project-card{
+background:#1e293b;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+max-width:400px;
+}
+
+.project-card a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+.hero-text h1{
+font-size:32px;
+}
+
+nav ul{
+gap:15px;
+font-size:14px;
+}
+
+.section{
+padding:60px 15px;
+}
+
 }
