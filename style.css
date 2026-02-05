@@ -1,0 +1,179 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:url("bg.jpg") center/cover no-repeat;;
+  color:white;
+}
+
+/* NAVBAR */
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:#020617;
+  padding:15px 40px;
+  z-index:1000;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:#38bdf8;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-size:15px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* HERO SECTION */
+.hero{
+  height:100vh;
+  background:url("bg.jpg") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero-text h1{
+  font-size:48px;
+}
+
+.hero-text h3{
+  margin:10px 0;
+  color:#38bdf8;
+}
+
+.hero-text p{
+  margin-top:10px;
+  font-size:18px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#38bdf8;
+  color:black;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:white;
+  transform:scale(1.05);
+}
+
+/* SECTIONS */
+.section{
+  padding:90px 20px;
+  text-align:center;
+}
+
+.section h2{
+  font-size:32px;
+  margin-bottom:20px;
+  color:#38bdf8;
+}
+
+/* SKILLS */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+  margin-top:20px;
+}
+
+.skills span{
+  background:#1e293b;
+  padding:10px 18px;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.skills span:hover{
+  background:#38bdf8;
+  color:black;
+}
+
+/* PROJECTS */
+.project-card{
+  background:#1e293b;
+  margin:20px auto;
+  padding:20px;
+  border-radius:10px;
+  max-width:420px;
+  transition:0.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-8px);
+}
+
+.project-card a{
+  color:#38bdf8;
+  text-decoration:none;
+}
+
+/* CONTACT */
+#contact a{
+  color:#38bdf8;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  margin-top:40px;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+.hero-text h1{
+  font-size:32px;
+}
+
+.hero-text p{
+  font-size:16px;
+}
+
+nav ul{
+  gap:15px;
+  font-size:14px;
+}
+
+.section{
+  padding:70px 15px;
+}
+
+}
